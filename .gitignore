@@ -5,6 +5,7 @@ target/
 !**/src/test/**
 .secret
 bin/
+*.bin
 
 ### NPM ###
 node_modules/

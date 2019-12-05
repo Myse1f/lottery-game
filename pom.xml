@@ -60,21 +60,21 @@
                 <artifactId>web3j-maven-plugin</artifactId>
                 <version>4.2.0</version>
                 <configuration>
-                    <packageName>com.myse1f</packageName>
-                    <sourceDestination>src/main/java/generated</sourceDestination>
+                    <packageName>com.myse1f.lotterygame</packageName>
+                    <sourceDestination>src/main/java/</sourceDestination>
                     <nativeJavaType>true</nativeJavaType>
-                    <outputFormat>java,bin</outputFormat>
+                    <outputFormat>java,bin,abi</outputFormat>
                     <soliditySourceFiles>
                         <directory>src/main/resources</directory>
                         <includes>
                             <include>**/*.sol</include>
                         </includes>
                     </soliditySourceFiles>
-                    <contract>
-                        <excludes>
-                            <exclude>Migrations</exclude>
-                        </excludes>
-                    </contract>
+                    <outputDirectory>
+                        <java>src/main/java</java>
+                        <bin>src/main/java</bin>
+                        <abi>src/main/java</abi>
+                    </outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
