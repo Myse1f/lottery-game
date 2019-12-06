@@ -7,10 +7,16 @@ import org.web3j.crypto.Credentials;
 @Component
 public class Myself {
     private static String privateKey;
+    private static String contractAddress;
 
     @Value("${myself.private_key}")
     public void setPrivateKey(String privateKey) {
         Myself.privateKey = privateKey;
+    }
+
+    @Value("${contract.address}")
+    public void setContractAddress(String contractAddress) {
+        Myself.contractAddress = contractAddress;
     }
 
     private static Credentials credentials;
@@ -28,5 +34,9 @@ public class Myself {
             address = getCredentials().getAddress();
         }
         return address;
+    }
+
+    public static String getContractAddress() {
+        return contractAddress;
     }
 }
