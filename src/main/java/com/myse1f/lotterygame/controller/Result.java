@@ -57,9 +57,19 @@ public class Result {
         SUCCESS(111, "Request Successfully."),
 
         /**
+         * busy
+         */
+        BUSY(222, "Busy drawing the lottery."),
+
+        /**
+         * waiting
+         */
+        WAITING(333, "Waiting for settlement block."),
+
+        /**
          * Exception happen inside backend
          */
-        EXCEPTION(222, "Some exception happened.");
+        EXCEPTION(444, "Some exception happened.");
 
         private int code;
         private String errMsg;
