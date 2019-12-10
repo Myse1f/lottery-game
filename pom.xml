@@ -11,6 +11,7 @@
     <groupId>com.myse1f</groupId>
     <artifactId>lottery-game</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>lottery-game</name>
     <description>An Ethereum-based Lottery DApp</description>
 
@@ -19,10 +20,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

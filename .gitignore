@@ -6,6 +6,7 @@ target/
 .secret
 bin/
 *.bin
+public/
 
 ### NPM ###
 node_modules/
