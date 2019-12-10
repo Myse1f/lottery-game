@@ -25,6 +25,13 @@ public class Web3jUtils {
         return client.getWeb3ClientVersion();
     }
 
+    public static EthBlockNumber getBlockHeight(Web3j web3j) throws ExecutionException, InterruptedException {
+        return web3j
+                .ethBlockNumber()
+                .sendAsync()
+                .get();
+    }
+
     public static EthCoinbase getCoinbase(Web3j web3j) throws ExecutionException, InterruptedException {
         return web3j
                 .ethCoinbase()
